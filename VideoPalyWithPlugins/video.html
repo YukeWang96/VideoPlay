@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="video.js/dist/video.js"></script>
+    <script src="video.js/dist/video.min.js"></script>
+    <script src="videojs-qualityselector/dist/videojs-qualityselector.min.js"></script>
+    <script src="videojs-hotkeys/build/videojs.hotkeys.min.js"></script>
+    <script src="videojs-hotkeys/videojs.hotkeys.js"></script>
+    <script src="videojs-socialshare/videojs.socialShare.js"></script>
+    <script src="videojs-suggestedVideoEndcap/videojs-suggestedVideoEndcap.js"></script>
+
+    <link href="video.js/dist/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="videojs-suggestedVideoEndcap/videojs-suggestedVideoEndcap.css">
+    <link href="videojs-qualityselector/dist/videojs-qualityselector.css" rel="stylesheet">
+    <link rel="stylesheet" href="videojs-socialshare/videojs.socialShare.css">
+
+</head>
+
+<body>
+
+<video id="my-video" class="video-js vjs-default-skin" controls preload="auto" width="640" height="264" data-setup='{}'>
+  <source src="video.mp4" type="video/mp4">
+</video>
+
+<script>
+    videojs('my-video').ready(function() {
+        this.hotkeys({
+            volumeStep: 0.1,
+            seekStep: 5
+        });
+    });
+</script>
+
+
+<script>
+  'use strict';
+  var video = videojs('my-video');
+  video.socialShare({
+    facebook: { // optional, includes a Facebook share button (See the [Facebook documentation](https://developers.facebook.com/docs/sharing/reference/share-dialog) for more information)
+      shareUrl: '', // optional, defaults to window.location.href
+      shareImage: '', // optional, defaults to the Facebook-scraped image
+      shareText: ''
+    },
+    twitter: { // optional, includes a Twitter share button (See the [Twitter documentation](https://dev.twitter.com/web/tweet-button/web-intent) for more information)
+      handle: '', // optional, appends `via @handle` to the end of the tweet
+      shareUrl: '', // optional, defaults to window.location.href
+      shareText: ''
+    }
+
+  });
+</script>
+
+<script>
+  var player = videojs('my-video');
+  player.qualityselector({
+        sources: [
+          { format: 'hd1080', src: 'http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4', type: 'video/mp4'},
+          { format: 'hd720', src: 'http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4', type: 'video/mp4'},
+          { format: 'large', src: '//vjs.zencdn.net/v/oceans.mp4', type: 'video/mp4'},
+          { format: 'medium', src: 'http://www.sample-videos.com/video/mp4/480/big_buck_bunny_480p_1mb.mp4', type: 'video/mp4'}
+        ],
+        formats: [
+          { code: 'hd1080', name: '1080p' },
+          { code: 'hd720', name: '720p' },
+          { code: 'large', name: '480p' },
+          { code: 'medium', name: '360p' }
+        ],
+
+        onFormatSelected: function(format) {
+          console.log(format);
+        }
+      });
+</script>
+
+<script>
+    'use strict';
+    var video = videojs('my-video');
+    video.suggestedVideoEndcap({
+    header: 'You may also like',
+    suggestions: [
+      {
+        title: 'Suggested Video One',
+        url: 'http://www.iqiyi.com/v_19rr9j1smk.html?vfm=2008_aldbd&fc=828fb30b722f3164&fv=p_02_01',
+        image: '003.jpg', // could be an animated GIF
+        alt: 'Description of photo', // optional photo description, defaults to the title
+        target: '_blank' // can be any anchor target type
+      },
+      {
+        title: 'Suggested Article One',
+        url: 'http://cn163.net/archives/23794/',
+        image: '004.jpg',
+        target: '_self' // defaults to self if no target value is present
+      }
+    ]
+  });
+</script>
+</body>
+</html>

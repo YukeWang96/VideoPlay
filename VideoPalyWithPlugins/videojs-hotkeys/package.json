@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "videojs-hotkeys",
+        "scope": null,
+        "escapedName": "videojs-hotkeys",
+        "name": "videojs-hotkeys",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\ASUS"
+    ]
+  ],
+  "_from": "videojs-hotkeys@latest",
+  "_id": "videojs-hotkeys@0.2.16",
+  "_inCache": true,
+  "_location": "/videojs-hotkeys",
+  "_nodeVersion": "4.4.7",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/videojs-hotkeys-0.2.16.tgz_1476220421466_0.8260323908179998"
+  },
+  "_npmUser": {
+    "name": "ctd1500",
+    "email": "ctd1500@gmail.com"
+  },
+  "_npmVersion": "2.15.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "videojs-hotkeys",
+    "scope": null,
+    "escapedName": "videojs-hotkeys",
+    "name": "videojs-hotkeys",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/videojs-hotkeys/-/videojs-hotkeys-0.2.16.tgz",
+  "_shasum": "5c1e88f75964a36a1805670c57334e6c6459607f",
+  "_shrinkwrap": null,
+  "_spec": "videojs-hotkeys",
+  "_where": "C:\\Users\\ASUS",
+  "author": {
+    "name": "Chris Dougherty"
+  },
+  "bugs": {
+    "url": "https://github.com/ctd1500/videojs-hotkeys/issues"
+  },
+  "dependencies": {},
+  "description": "Adds more hotkey support to video.js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-github-releaser": "^0.1.18",
+    "grunt-zip": "^0.17.0",
+    "time-grunt": "^1.3.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "5c1e88f75964a36a1805670c57334e6c6459607f",
+    "tarball": "https://registry.npmjs.org/videojs-hotkeys/-/videojs-hotkeys-0.2.16.tgz"
+  },
+  "gitHead": "8b8621153889202130b262b5492d5668ae7ee2c6",
+  "homepage": "https://github.com/ctd1500/videojs-hotkeys",
+  "keywords": [
+    "videojs",
+    "videojs-plugin",
+    "hotkeys"
+  ],
+  "license": "Apache-2.0",
+  "main": "videojs.hotkeys.min.js",
+  "maintainers": [
+    {
+      "name": "ctd1500",
+      "email": "ctd1500@gmail.com"
+    }
+  ],
+  "name": "videojs-hotkeys",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctd1500/videojs-hotkeys.git"
+  },
+  "scripts": {},
+  "version": "0.2.16"
+}

@@ -1,0 +1,90 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "videojs-socialshare",
+        "scope": null,
+        "escapedName": "videojs-socialshare",
+        "name": "videojs-socialshare",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\ASUS"
+    ]
+  ],
+  "_from": "videojs-socialshare@latest",
+  "_id": "videojs-socialshare@1.0.1",
+  "_inCache": true,
+  "_location": "/videojs-socialshare",
+  "_nodeVersion": "0.10.9",
+  "_npmUser": {
+    "name": "justinmccraw",
+    "email": "jmccraw1+npm@kent.edu"
+  },
+  "_npmVersion": "2.10.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "videojs-socialshare",
+    "scope": null,
+    "escapedName": "videojs-socialshare",
+    "name": "videojs-socialshare",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/videojs-socialshare/-/videojs-socialshare-1.0.1.tgz",
+  "_shasum": "a12245bec7270360d25ce562092239ebc79c94e2",
+  "_shrinkwrap": null,
+  "_spec": "videojs-socialshare",
+  "_where": "C:\\Users\\ASUS",
+  "author": {
+    "name": "Justin McCraw",
+    "email": "jmccraw1+socialShare@gmail.com",
+    "url": "http://twitter.com/justinmccraw"
+  },
+  "bugs": {
+    "url": "https://github.com/jmccraw/videojs-socialShare/issues"
+  },
+  "dependencies": {},
+  "description": "Video.js plugin to display a social share tool on hover.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "a12245bec7270360d25ce562092239ebc79c94e2",
+    "tarball": "https://registry.npmjs.org/videojs-socialshare/-/videojs-socialshare-1.0.1.tgz"
+  },
+  "gitHead": "975701630963213ddc66210a51fce12d6f07c2bb",
+  "homepage": "https://github.com/jmccraw/videojs-socialShare#readme",
+  "keywords": [
+    "videojs",
+    "social",
+    "sharing",
+    "social media",
+    "twitter",
+    "facebook",
+    "videojs-plugin"
+  ],
+  "license": "MIT",
+  "main": "videojs.suggestedVideoEndcap.js",
+  "maintainers": [
+    {
+      "name": "justinmccraw",
+      "email": "jmccraw1+npm@kent.edu"
+    }
+  ],
+  "name": "videojs-socialshare",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmccraw/videojs-socialShare.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.1"
+}
